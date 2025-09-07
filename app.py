@@ -4,17 +4,14 @@ from textblob import TextBlob
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 🔹 Page config (sabse upar hona chahiye)
 st.set_page_config(page_title="Kannupriya — Sentiment Dashboard", layout="wide")
 
-# 🔹 API key directly (replace karo apni key se)
-NEWS_API_KEY = "c0273c51477d4e1c88f2f25081db0381"
 
+api_key = st.secrets["NEWS_API_KEY"]
 # 🔹 Title
 st.title("🎬 Real-Time Sentiment Analysis Dashboard")
 st.write("Made by Kannupriya ✨")
 
-# 🔹 Function banao news fetch karne ke liye
 def fetch_news(query="movies"):
     url = f"https://newsapi.org/v2/everything?q={query}&language=en&apiKey={NEWS_API_KEY}"
     response = requests.get(url)
@@ -78,3 +75,4 @@ elif option == "Multiple Sentences":
         ax.pie(values, labels=labels, autopct="%1.1f%%")
         st.pyplot(fig)
         st.pyplot(fig)
+
