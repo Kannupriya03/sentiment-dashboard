@@ -1,11 +1,38 @@
 import streamlit as st
+import requests
 from textblob import TextBlob
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.title("📊 Real-Time Sentiment Analysis Dashboard")
+# 🔹 Page config (sabse upar hona chahiye)
+st.set_page_config(page_title="Kannupriya — Sentiment Dashboard", layout="wide")
 
-# Sidebar menu
+# 🔹 API key directly (replace karo apni key se)
+NEWS_API_KEY = "c0273c51477d4e1c88f2f25081db0381"
+
+# 🔹 Title
+st.title("🎬 Real-Time Sentiment Analysis Dashboard")
+st.write("Made by Kannupriya ✨")
+
+# 🔹 Function banao news fetch karne ke liye
+def fetch_news(query="movies"):
+    url = f"https://newsapi.org/v2/everything?q={query}&language=en&apiKey={NEWS_API_KEY}"
+    response = requests.get(url)
+    data = response.json()
+    articles = data.get("articles", [])
+    return articles
+
+# 🔹 News ko Streamlit me show karna
+st.subheader("📰 Latest News on Movies")
+articles = fetch_news("movies")
+
+for article in articles[:5]:
+    st.write("", article["title"], "")
+    st.write(article["url"])
+
+# --- Sentiment Analysis Section ---
+st.subheader("📊 Sentiment Analysis")
+
 option = st.sidebar.selectbox(
     "Choose Analysis Mode",
     ["Single Sentence", "Multiple Sentences"]
@@ -49,4 +76,5 @@ elif option == "Multiple Sentences":
 
         fig, ax = plt.subplots()
         ax.pie(values, labels=labels, autopct="%1.1f%%")
+        st.pyplot(fig)
         st.pyplot(fig)
