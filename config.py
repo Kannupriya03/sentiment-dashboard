@@ -1,1 +1,2 @@
 NEWS_API_KEY="c0273c51477d4e1c88f2f25081db0381"
+Remove config.py
