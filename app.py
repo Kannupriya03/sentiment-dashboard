@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Kannupriya — Sentiment Dashboard", layout="wide")
 
 
-api_key = st.secrets["NEWS_API_KEY"]
+NEWS_API_KEY = st.secrets["NEWS_API_KEY"]
 # 🔹 Title
 st.title("🎬 Real-Time Sentiment Analysis Dashboard")
 st.write("Made by Kannupriya ✨")
@@ -75,4 +75,5 @@ elif option == "Multiple Sentences":
         ax.pie(values, labels=labels, autopct="%1.1f%%")
         st.pyplot(fig)
         st.pyplot(fig)
+
 
