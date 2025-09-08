@@ -36,6 +36,7 @@ def generate_wordcloud(texts):
     plt.imshow(wordcloud, interpolation="bilinear")
     plt.axis("off")
     st.pyplot(plt)
+    plt.clf()
 
 # --- WordCloud after showing news ---
 if articles:
@@ -91,6 +92,7 @@ elif option == "Multiple Sentences":
         ax.pie(values, labels=labels, autopct="%1.1f%%")
         st.pyplot(fig)
         st.pyplot(fig)
+
 
 
 
