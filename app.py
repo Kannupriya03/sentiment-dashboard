@@ -118,8 +118,13 @@ elif option == "Multiple Sentences":
             st.error("⚠ Please enter some text before analyzing.")
 
 # ------------------ SIDEBAR: About ------------------
-st.sidebar.markdown("## ℹ About")
-st.sidebar.write("This app fetches the latest *movie news* and performs *real-time sentiment analysis* using TextBlob. Built with ❤ by Kannupriya.")
+st.sidebar.markdown("## About this App")
+st.sidebar.info(
+    "🎬 This is a Real-Time Sentiment Analysis Dashboard built with Streamlit. "
+    "It fetches latest movie news using NewsAPI, generates a WordCloud of trending keywords, "
+    "and performs sentiment analysis (single & multiple sentences) using TextBlob. \n\n"
+    "👩‍💻 Built with ❤ by [Kannupriya](https://github.com/Kannupriya03)"
+)
 
 
 
