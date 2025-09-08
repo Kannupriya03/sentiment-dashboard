@@ -31,10 +31,20 @@ Built with ❤ by *Kannupriya*.
    ```bash
    git clone https://github.com/Kannu Priya/sentiment-dashboard.git
    cd sentiment-dashboard
+2. _Install dependencies_
+   pip install -r requirements.txt
+3. _Run the app_
+   streamlit run app.py
+   App will open at (http://localhost:8501/)
+   screenshots/
 ## 👩‍💻 Author
 - *Kannupriya*  
 - [GitHub](https://github.com/Kannupriya03) | [LinkedIn](https://www.linkedin.com/in/kannu-priya-2010b3304)
--
+- 
+**Note**
+This app uses the free tier of NewsAPI which is limited to 100 requests/day (50 per 12 hours).
+If headlines do not load, it is due to rate limits. Sentiment analysis features will continue to work.
+
 
 
 
