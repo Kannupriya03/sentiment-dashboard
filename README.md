@@ -1,33 +1,39 @@
 # 🎬 Real-Time Sentiment Analysis Dashboard
 
-This is a Streamlit-based web app that performs *real-time sentiment analysis* and also fetches the *latest movie news* with a WordCloud visualization.
+A *Streamlit web application* that fetches the latest movie news and performs *real-time sentiment analysis*.  
+Built with ❤ by *Kannupriya*.
 
 ---
 
-## ✨ Features
-- 🔹 Analyze single sentence sentiment (Positive / Negative / Neutral)  
-- 🔹 Analyze multiple sentences with a pie chart visualization  
-- 🔹 Fetch latest movie-related news using *NewsAPI*  
-- 🔹 Generate a *WordCloud* from news headlines  
-- 🔹 Deployed on *Streamlit Cloud*
+## 🚀 Features
+- Fetches *latest movie news* using NewsAPI.
+- Displays a *WordCloud* of trending news keywords.
+- Perform *Sentiment Analysis*:
+  - ✅ Single Sentence
+  - ✅ Multiple Sentences (with Pie Chart visualization)
+- Simple & interactive *Streamlit dashboard*.
 
 ---
 
 ## 🛠 Tech Stack
-- *Python 3*
-- *Streamlit*
-- *TextBlob*
-- *Matplotlib*
-- *Pandas*
-- *WordCloud*
-- *NewsAPI*
+- [Streamlit](https://streamlit.io/)
+- [NewsAPI](https://newsapi.org/)
+- [TextBlob](https://textblob.readthedocs.io/)
+- [Matplotlib](https://matplotlib.org/)
+- [WordCloud](https://pypi.org/project/wordcloud/)
+- [Pandas](https://pandas.pydata.org/)
 
 ---
 
-## 🚀 How to Run Locally
-1. Clone the repo:
+## ⚙ Installation & Setup
+
+1. *Clone the repository*
    ```bash
    git clone https://github.com/Kannu Priya/sentiment-dashboard.git
-
    cd sentiment-dashboard
+## 👩‍💻 Author
+- *Kannupriya*  
+- [GitHub](https://github.com/Kannupriya03) | [LinkedIn](https://www.linkedin.com/in/kannu-priya-2010b3304]
+-
+
 
