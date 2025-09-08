@@ -25,6 +25,8 @@ def fetch_news(query="movies"):
 st.subheader("📰 Latest News on Movies")
 articles = fetch_news("movies")
 
+st.write("Articles fetched:",len(articles))
+
 for article in articles[:5]:
     st.write("", article["title"], "")
     st.write(article["url"])
@@ -92,6 +94,7 @@ elif option == "Multiple Sentences":
         ax.pie(values, labels=labels, autopct="%1.1f%%")
         st.pyplot(fig)
         st.pyplot(fig)
+
 
 
 
