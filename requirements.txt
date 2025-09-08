@@ -4,3 +4,4 @@ textblob
 matplotlib
 plotly
 pandas
+wordcloud
