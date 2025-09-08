@@ -27,6 +27,23 @@ for article in articles[:5]:
     st.write("", article["title"], "")
     st.write(article["url"])
 
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+def generate_wordcloud(texts):
+    text = " ".join(texts)
+    wordcloud = WordCloud(width=800, height=400, background_color="black").generate(text)
+    plt.figure(figsize=(10, 5))
+    plt.imshow(wordcloud, interpolation="bilinear")
+    plt.axis("off")
+    st.pyplot(plt)
+
+# --- WordCloud after showing news ---
+if articles:
+    st.subheader("☁ WordCloud of Movie News")
+    texts = [article["title"] for article in articles if article["title"]]
+    generate_wordcloud(texts)
+
 # --- Sentiment Analysis Section ---
 st.subheader("📊 Sentiment Analysis")
 
@@ -75,5 +92,6 @@ elif option == "Multiple Sentences":
         ax.pie(values, labels=labels, autopct="%1.1f%%")
         st.pyplot(fig)
         st.pyplot(fig)
+
 
 
