@@ -27,5 +27,6 @@ This is a Streamlit-based web app that performs *real-time sentiment analysis* a
 ## 🚀 How to Run Locally
 1. Clone the repo:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
+   git clone https://github.com/Kannu Priya/sentiment-dashboard.git
+
    cd <your-repo-name>
