@@ -33,7 +33,8 @@ Built with ❤ by *Kannupriya*.
    cd sentiment-dashboard
 ## 👩‍💻 Author
 - *Kannupriya*  
-- [GitHub](https://github.com/Kannupriya03) | [LinkedIn](https://www.linkedin.com/in/kannu-priya-2010b3304]
+- [GitHub](https://github.com/Kannupriya03) | [LinkedIn](https://www.linkedin.com/in/kannu-priya-2010b3304)
 -
+
 
 
