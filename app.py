@@ -3,6 +3,8 @@ import requests
 from textblob import TextBlob
 import pandas as pd
 import matplotlib.pyplot as plt
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Kannupriya — Sentiment Dashboard", layout="wide")
 
@@ -26,9 +28,6 @@ articles = fetch_news("movies")
 for article in articles[:5]:
     st.write("", article["title"], "")
     st.write(article["url"])
-
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
 
 def generate_wordcloud(texts):
     text = " ".join(texts)
@@ -92,6 +91,7 @@ elif option == "Multiple Sentences":
         ax.pie(values, labels=labels, autopct="%1.1f%%")
         st.pyplot(fig)
         st.pyplot(fig)
+
 
 
 
