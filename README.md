@@ -40,10 +40,12 @@ Built with ❤ by *Kannupriya*.
   ## 👩‍💻 Author
 - *Kannupriya*  
 - [GitHub](https://github.com/Kannupriya03) | [LinkedIn](https://www.linkedin.com/in/kannu-priya-2010b3304)
-- https://sentiment-dashboard-ddpqbtbunvfdevz9we9pr3.streamlit.app/
+- _App Link _- https://sentiment-dashboard-ddpqbtbunvfdevz9we9pr3.streamlit.app/
+
 **Note**
 This app uses the free tier of NewsAPI which is limited to 100 requests/day (50 per 12 hours).
 If headlines do not load, it is due to rate limits. Sentiment analysis features will continue to work.
+
 
 
 
